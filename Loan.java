@@ -83,8 +83,8 @@ public class Loan {
         double loan = input.nextDouble();
         Loan newloan = new Loan(interest,years,loan);
         System.out.println("The loan was created on " + newloan.loanDate);
-        System.out.println("The monthly payment is " + newloan.getMonthlyPayment());
-        System.out.println("The total payment is " + newloan.getTotalPayment());
+        System.out.println("The monthly payment is " + String.format("%.2f", newloan.getMonthlyPayment()));
+        System.out.println("The total payment is " + String.format("%.2f", newloan.getTotalPayment()));
         input.close();
 
     
